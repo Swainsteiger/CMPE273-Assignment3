@@ -87,6 +87,8 @@ Answer the following question:
 
 * What are the best _k_ hashes and _m_ bits values to store one million _n_ keys (E.g. e52f43cd2c23bb2e6296153748382764) suppose we use the same MD5 hash key from [pickle_hash.py](https://github.com/sithu/cmpe273-spring20/blob/master/midterm/pickle_hash.py#L14) and explain why?
 
+ANS: The size of the 'm' bit array depends on the false probability required. Hence, to have less false probability, bigger the size of the bitarray needed and in turn more number of times hashing needs to be done.
+
 ```python
 @lru_cache(5)
 def get(key):
